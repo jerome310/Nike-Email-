@@ -4,42 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Nike Email</title>
-    <!-- Nike Fonts -->
-    <style>
-        @font-face {
-            src: url(/fonts/Futura\ Condensed\ Extra\ Bold.otf);
-            font-family: nike;
-        }
-    </style>
+    
+    <style type="text/css">
+	/* regular CSS styles go here */
+
+@media only screen and (max-device-width: 960px) {
+		/* tablet-larger phone CSS styles go here */
+     .container {
+            	width: 600px;
+            }
+	}
+
+@media only screen and (max-device-width: 600px) {
+		/* smaller-mobile-specific CSS styles go here */
+            .container {
+                width: 100% !important;
+            }
+}
+</style>
 </head>
 <body style="background-color: #ffffff; margin: 0.5px">
     <!-- Start of HTML EMAIL content -->
-   <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center">
+   <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="max-width: 600px;">
       <tr>
           <td>
               <!-- Start of HTML Container -->
-            <table cellspacing="0" cellpadding="0" border="0" width="600" align="center" style="border: 1px solid #E5E5E5;">
+            <table class="container" cellspacing="0" cellpadding="0" border="0" width="600" align="center" style="border: 1px solid #E5E5E5;">
                <!-- Start of address row -->
                 <tr>
                    <td>
                        <!-- Start of address section -->
-                       <table cellspacing="0" cellpadding="0" border="0" width="100%" align="left" style="background-color: #F7F7F7; font-family: Helvetica, Arial, sans-serif; padding: 25px 0 0 50px; border: 1px solid #E5E5E5; ">    <tr>
-                              <td>
-                                  <h3 style="margin: 0;">
+                       <table class="header-address" cellspacing="0" cellpadding="0" border="0" width="100%" align="left" style="background-color: #F7F7F7; font-family: Helvetica, Arial, sans-serif; border: 1px solid #E5E5E5;">
+                           <tr>
+                           	<td style="height:40px;"></td>
+                           </tr>
+                           <tr>
+                              <td style="width: 325px;">
+                                  <h3 style="margin: 0 0 5px 40px;">
                                       Delivering to: Smiles Davis
                                   </h3>
                               </td>
                           </tr>
                           <tr>
-                              <td>
-                                  <p style="margin-bottom: 0; color: #666666;">
+                              <td style="width: 325px;">
+                                  <p style="margin: 0 0 5px 40px; color: #666666;">
                                     600 Montgomery St
                                   </p>
                               </td>
                           </tr>
                           <tr>
-                              <td>
-                                 <p style="color: #666666; margin-bottom: 0;">
+                              <td style="width: 325px;">
+                                 <p style="margin: 0 0 5px 40px; color: #666666;">
                                     San Francisco, CA 94111
                                  </p>
                               </td>
@@ -498,14 +513,14 @@
                             		<table cellspacing="0" cellpadding="0" border="0" width="85%" align="center" style="font-family: Helvetica, Arial, sans-serif; color: #9f9e9f;">
                             			<tr>
                             				<td>
-                            	              <p>
+                            	              <p style="text-align: center; margin: 0 0 15px; font-size: 14px;">
                             	              	© 2020 Nike, Inc. All Rights Reserved.
                             	              </p>
                             				</td>
                             			</tr>
                                         <tr>
                                         	<td>
-                                        		<p>
+                                        		<p style="text-align: center; margin: 0 0 15px; font-size: 14px;">
                                         			NIKE, INC. NIKE Retail B.V., Colosseum 1, 1213 NL, Hilversum, The Netherlands
                                         		</p>
                                         	</td>
