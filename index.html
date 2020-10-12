@@ -9,6 +9,9 @@
       /* smaller-mobile-specific CSS styles go here */
       @media only screen and (max-width: 600px) {
         .container {
+          width: 100%;
+        }
+        .header-section {
           width: 100% !important;
         }
         .delivery-letters p {
@@ -71,7 +74,6 @@
       border="0"
       width="100%"
       align="center"
-      style="max-width: 600px"
     >
       <tr>
         <td>
@@ -90,6 +92,7 @@
               <td>
                 <!-- Start of address section -->
                 <table
+                  class="header-section"
                   cellspacing="0"
                   cellpadding="0"
                   border="0"
